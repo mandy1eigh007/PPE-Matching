@@ -1,17 +1,32 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
 }
 
 h1 {
     color: #333;
+    margin-top: 20px;
 }
 
 p {
     color: #555;
+}
+
+header, footer {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+}
+
+header p {
+    margin: 0;
+}
+
+footer p {
+    font-size: 12px;
 }
 
 .game-container {
@@ -19,6 +34,10 @@ p {
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .tasks, .ppe-options {
@@ -27,44 +46,51 @@ p {
 
 .task {
     margin: 20px;
-    padding: 10px;
-    background-color: #fff;
+    padding: 20px;
+    background-color: #e9ecef;
     border: 2px solid #ccc;
     border-radius: 8px;
     text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .task img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .ppe {
-    padding: 10px;
-    background-color: #007bff;
+    padding: 10px 20px;
+    background-color: #28a745;
     color: #fff;
     margin: 10px;
     cursor: grab;
     border-radius: 8px;
     display: inline-block;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
 }
 
 .ppe:hover {
-    background-color: #0056b3;
+    background-color: #218838;
 }
 
 #checkButton {
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: #dc3545;
     color: #fff;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     margin-top: 20px;
+    transition: background-color 0.3s;
 }
 
 #checkButton:hover {
-    background-color: #218838;
+    background-color: #c82333;
 }
 
 #result {
