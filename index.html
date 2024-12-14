@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPE Matching Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>PPE Matching Game</h1>
+    <p>Drag the correct PPE to match each task.</p>
+
+    <div class="game-container">
+        <div class="tasks">
+            <div class="task" id="task1">
+                <img src="sanding.jpg" alt="Sanding a Wooden Board">
+                <p>Sanding a Wooden Board</p>
+            </div>
+            <div class="task" id="task2">
+                <img src="cutting.jpg" alt="Cutting Wood with a Circular Saw">
+                <p>Cutting Wood with a Circular Saw</p>
+            </div>
+            <div class="task" id="task3">
+                <img src="painting.jpg" alt="Spray Painting">
+                <p>Spray Painting</p>
+            </div>
+        </div>
+
+        <div class="ppe-options">
+            <div class="ppe" draggable="true" id="ppe1">Safety Glasses</div>
+            <div class="ppe" draggable="true" id="ppe2">Dust Mask</div>
+            <div class="ppe" draggable="true" id="ppe3">Hard Hat</div>
+            <div class="ppe" draggable="true" id="ppe4">Ear Protection</div>
+            <div class="ppe" draggable="true" id="ppe5">Gloves</div>
+        </div>
+    </div>
+
+    <button id="checkButton">Check Answers</button>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
